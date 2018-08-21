@@ -2,8 +2,15 @@ body {
   font: 1em/150% sans-serif;
   padding: 1em;
   margin: 0 auto;
-	max-width: 31em;
+	max-width: 36em;
 }
+
+@media (max-width:1000) {
+  body {
+    font-size: 2em;
+  }
+}
+
 form {
 	position: relative;
 	border-radius: 7px;
@@ -26,7 +33,6 @@ form {
 legend {
 	color: darkblue;
 }
-
 
 
 button {
@@ -70,7 +76,9 @@ button:hover {
 #sep {
 	width: 4em
 }
-
+input {
+	font-size: 80%;
+}
 input:invalid {
 	color: red; 
 	border: 0.1em ridge red;
