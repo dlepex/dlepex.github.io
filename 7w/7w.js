@@ -210,14 +210,19 @@
 		}
 	}
 
-	function replaceNonAlphaNum(s) {
+	function removeNonAlphaNumeric(s) {
 		return s.replace(/[\W_]+/g, '');
 	}
 	function base64(s) {
 		return CryptoJS.enc.Base64.stringify(s)
 	}
+	function hashFunc(str) {
+		return getHashAlg()(str)
+	}
+
+
 	function genPassword(str) {
-		return replaceNonAlphaNum(base64(getHashAlg()(str)))
+		return removeNonAlphaNumeric(base64(hashFunc(str)))
 	}
 
 	function copyToClipboard(text) {

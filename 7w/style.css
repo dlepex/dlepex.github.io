@@ -110,14 +110,22 @@ fieldset {
 #err-pane>legend {
 	color: red;
 }
-.buttons {
+
+.control-pane {
+	display: inline-block;
 	margin-left: 1em;
 	margin-bottom: 1em;
 }
+
+.control-buttons {
+	display: inherit;
+}
+
 .word {
 	display: inline-block;
 	margin-right: 1em;
 }
+
 #words-container {
 	display: flex;
 	flex-direction: row;
@@ -128,7 +136,6 @@ fieldset {
 .word>input {
 	width: 1.5em;
 }
-
 
 .word>input:focus {
 	width: 12em;
